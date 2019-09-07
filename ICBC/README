@@ -1,0 +1,70 @@
+主要功能：
+1.注册，登录，切换账户。
+2.查询余额，存款，取现，购物
+3.root界面：冻结账户，修改用户密码
+4.可查看账单：存款，转账，消费等
+
+
+目录结构：
+  ICBC(Industrial and Commercial Bank of China) APP
+--bin 启动程序入口
+ -bin 启动主程序
+ -root 启动管理员界面
+
+--conf(config) 配置文件
+ -Account information  账户信息 名字,登录密码,支付密码
+ -Backup 备份文件
+ -Current_login_account 储存当前登录用户名
+ -list 商品列表
+ -Lock_account 存储被冻结的账户名
+ -logging status 储存当前账户是否登录
+
+--logger 日志记录
+ -里面存了不同账户的日志文件
+
+--mudule 逻辑相关,模块
+ -Cash_withdrawal 取现模块
+ -Check_bank_card_statement 日志模块
+ -Deposit_function 存钱模块
+ -login 登录模块(输入用户名密码,校验对错)
+ -Query balance 余额查询
+ -ROOT 管理员模块
+ -shopping_mall 商城模块
+ -The_main_interface 主功能跳转模块
+  -transfer_accounts 转账模块
+
+
+--README 应用介绍
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
